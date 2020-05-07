@@ -1,22 +1,10 @@
+public static Connection connect() {
+		Connection conn=null;
 		try {
-			Connection myconn=connect();
-			String query="SELECT * FROM teacherInfo WHERE id=?";
+			conn=DriverManager.getConnection("jdbc:mysql://65.25.104.5:3306/students","root","Legal69!");
 			
-			PreparedStatement pst=myconn.prepareStatement(query);
-			pst.setInt(1, id);
-			ResultSet result=pst.executeQuery();
-			if (result.next()) {	
-				first.setText(result.getString(3));
-				last.setText(result.getString(4));
-				module.setText(result.getString(2));
-				qual.setText(result.getString(5));
-				hours.setText(result.getString(6));
-				tid.setText(result.getString(1));
-			}
-			else {
-				JOptionPane.showMessageDialog(null, "Something is wrong!");
-			}
-		}catch (Exception e1) {
-			
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
+		return conn;
 	}
