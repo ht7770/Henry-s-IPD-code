@@ -57,28 +57,5 @@ public AdminTeacherOptions() {
 		});
 		btnNewButton.setBounds(86, 133, 143, 35);
 		contentPane.add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("Remove a teacher");
-		btnNewButton_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				RemoveTeacher teacher1=new RemoveTeacher();
-				teacher1.setVisible(true);
-				setVisible(false);
-			}
-		});
-		btnNewButton_1.setBounds(272, 133, 143, 35);
-		contentPane.add(btnNewButton_1);
-		
-		JButton btnNewButton_2 = new JButton("Update Existing Teacher");
-		btnNewButton_2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				UpdateTeacher teacher12=new UpdateTeacher();
-				teacher12.setVisible(true);
-				setVisible(false);
-			}
-		});
-		btnNewButton_2.setBounds(169, 203, 167, 35);
-		contentPane.add(btnNewButton_2);
-	}
 
 }
