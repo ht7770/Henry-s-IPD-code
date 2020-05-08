@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page{
+    height: 100vh;
+    background: url(/images/theBack.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.nav-wrap{
+    border-bottom: 3px solid #F0DAEE;
+    height: 6vh;
+    
+}
+
+.nav-wrap ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    
+}
+
+.nav-wrap ul li{
+    list-style: none;
+    padding:10px 20px 10px 20px;
+    background-color: transparent;
+}
+
+.nav-wrap ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    color: #F0DAEE;
+    font-family: 'Muli', sans-serif;
+}
+
+.landing-page-wrapper{
+    
+}
+
+.landing-text{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.landing-name{
+    margin-bottom: 60%;
+    font-size: 4rem;
+    color: #F0DAEE;
+    letter-spacing: 8px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.landing-text{
+    margin-bottom: 100%;
+    font-family: 'Exo 2', sans-serif;
+    color: #FEFEF0;
+    letter-spacing: 2px;
+}
