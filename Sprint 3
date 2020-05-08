@@ -1,1 +1,47 @@
+public class GPA {
+	
+	public String name;
+	public int id;
+	public String last_name;
+	public int module1_mark;
+	public int module2_mark;
+	public int module3_mark;
+	public int module4_mark;
+	public int module5_mark;
+	public double GPA;
+	
+	
+	public int getID() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getLName() {
+		return last_name;
+	}
+	
+	public int getModule1_mark(){
+		return module1_mark
+	}
+
+	public int getModule2_mark(){
+		return module2_mark
+	}
+	
+	public int getModule3_mark(){
+		return module3_mark
+	}
+	
+	public int getModule4_mark(){
+		return module4_mark
+	}	
+	
+	public int GPA(){
+		return GPA
+	}
+	
+}
 
